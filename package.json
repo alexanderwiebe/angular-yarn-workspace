@@ -9,6 +9,11 @@
     "test": "ng test"
   },
   "private": true,
+  "workspaces": {
+    "packages": [
+      "projects/*"
+    ]
+  },
   "dependencies": {
     "@angular/animations": "~12.1.0",
     "@angular/common": "~12.1.0",
