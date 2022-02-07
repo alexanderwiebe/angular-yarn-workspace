@@ -7894,6 +7894,16 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+version-outputer-ts@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/version-outputer-ts/-/version-outputer-ts-1.0.0.tgz#32f0cd3bf618173d790b75bc68072f936f609d54"
+  integrity sha512-2sCID0nRlnaaGTSBeIuRSV27E4kpa3mRzILyhCISOkJRkeKAuEn1xZT0W3d9ezA3u/xtOCRzxxVaqgqwvT6zEw==
+
+version-outputer@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/version-outputer/-/version-outputer-2.0.1.tgz#773db539ca4fc4b7a8625dd99dc087e119bf6dc0"
+  integrity sha512-YdIi1ENpNR6gF2iaRmhev+H29zPwJsM1Ll7h3J9R6DRiPzADDZA5bJotskAAEIL7770XDQ7ghXvMOoHYdRvrWw==
+
 void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
