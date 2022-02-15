@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/custom-webpack": "^13.1.0",
     "@angular/animations": "~12.1.0",
     "@angular/common": "~12.1.0",
     "@angular/compiler": "~12.1.0",
@@ -20,8 +21,8 @@
     "@angular/router": "~12.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4",
-    "version-outputer-ts": "2.0.0"
+    "version-outputer-ts": "2.0.0",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.4",
