@@ -1,4 +1,47 @@
-import { Configuration } from 'webpack';
-// import dep from 'package.json';
+import dep from 'package.json';
+import { Configuration, container } from 'webpack';
 
-export const webpackConfig: Configuration = {};
+export const webpackConfig: Configuration = {
+  output: {
+    publicPath: 'http://localhost:4204/',
+    uniqueName: 'mfe',
+  },
+  experiments: {
+    topLevelAwait: true,
+  },
+  optimization: {
+    runtimeChunk: false,
+  },
+  plugins: [
+    new container.ModuleFederationPlugin({
+      name: 'mfe',
+      library: { type: 'var', name: 'mfe' },
+      filename: 'mfe.js',
+      exposes: {
+        RestaurantModule: 'src/app/mfe-shared/mfe-shared.module.ts',
+      },
+      shared: {
+        '@angular/core': {
+          eager: true,
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: dep.dependencies['@angular/router'],
+        },
+        '@angular/common': {
+          eager: true,
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: dep.dependencies['@angular/common'],
+        },
+        '@angular/router': {
+          eager: true,
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: dep.dependencies['@angular/router'],
+        },
+      },
+    }),
+  ],
+};
+
+export default webpackConfig;
