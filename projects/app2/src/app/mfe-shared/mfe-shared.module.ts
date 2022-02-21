@@ -5,7 +5,7 @@ import { MfeSharedComponent } from './components/mfe-shared/mfe-shared.component
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'a',
     component: MfeSharedComponent,
   },
 ];
