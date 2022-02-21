@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MfeSharedComponent } from './components/mfe-shared/mfe-shared.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MfeSharedComponent
+  ],
   imports: [
     CommonModule
   ]
