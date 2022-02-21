@@ -18,7 +18,7 @@ export const webpackConfig: Configuration = {
       library: { type: 'var', name: 'mfe' },
       filename: 'mfe.js',
       exposes: {
-        RestaurantModule: 'src/app/mfe-shared/mfe-shared.module.ts',
+        MfeModule: './src/app/mfe-shared/mfe-shared.module.ts',
       },
       shared: {
         '@angular/core': {
