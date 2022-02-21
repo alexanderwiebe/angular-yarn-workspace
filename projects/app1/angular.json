@@ -70,7 +70,8 @@
               "browserTarget": "app1:build:production"
             },
             "development": {
-              "browserTarget": "app1:build:development"
+              "browserTarget": "app1:build:development",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"

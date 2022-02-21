@@ -73,7 +73,8 @@
               "browserTarget": "app2:build:production"
             },
             "development": {
-              "browserTarget": "app2:build:development"
+              "browserTarget": "app2:build:development",
+              "port": 4202
             }
           },
           "defaultConfiguration": "development"
