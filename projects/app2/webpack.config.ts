@@ -3,7 +3,7 @@ import { Configuration, container } from 'webpack';
 
 export const webpackConfig: Configuration = {
   output: {
-    publicPath: 'http://localhost:4204/',
+    publicPath: 'http://localhost:4202/',
     uniqueName: 'mfe',
   },
   experiments: {
@@ -18,7 +18,7 @@ export const webpackConfig: Configuration = {
       library: { type: 'var', name: 'mfe' },
       filename: 'mfe.js',
       exposes: {
-        MfeModule: './src/app/mfe-shared/mfe-shared.module.ts',
+        MfeSharedModule: './src/app/mfe-shared/mfe-shared.module.ts',
       },
       shared: {
         '@angular/core': {
