@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FileType, MfeUtil } from 'utils';
+
+export const mfe = new MfeUtil();
 
 const routes: Routes = [
-  // {
-  //   path: 'mfe',
-  //   loadChildren: () =>
-  //     import('./mfe-shared/mfe-shared.module').then((m) => m.MfeSharedModule),
-  // },
+  {
+    path: 'mfe',
+    loadChildren: () =>
+      mfe
+        .loadRemoteFile({
+          remoteName: 'mfe',
+          remoteEntry: `http://localhost:4202/mfe.js`,
+          exposedFile: 'MfeSharedModule',
+          exposeFileType: FileType.Module,
+        })
+        .then((m) => m.MfeSharedModule),
+  },
   {
     path: 'local',
     loadChildren: () =>
