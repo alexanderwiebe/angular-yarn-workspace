@@ -1,4 +1,3 @@
-import dep from 'package.json';
 import { Configuration, container } from 'webpack';
 
 export const webpackConfig: Configuration = {
@@ -23,21 +22,21 @@ export const webpackConfig: Configuration = {
       shared: {
         '@angular/core': {
           eager: true,
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: dep.dependencies['@angular/router'],
+          // singleton: true,
+          // strictVersion: true,
+          // requiredVersion: dep.dependencies['@angular/router'],
         },
         '@angular/common': {
           eager: true,
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: dep.dependencies['@angular/common'],
+          // singleton: true,
+          // strictVersion: true,
+          // requiredVersion: dep.dependencies['@angular/common'],
         },
         '@angular/router': {
           eager: true,
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: dep.dependencies['@angular/router'],
+          // singleton: true,
+          // strictVersion: true,
+          // requiredVersion: dep.dependencies['@angular/router'],
         },
       },
     }),
