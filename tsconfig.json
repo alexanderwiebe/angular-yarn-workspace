@@ -17,6 +17,10 @@
       "lib2": [
         "dist/lib2/lib2",
         "dist/lib2"
+      ],
+      "utils": [
+        "dist/utils/utils",
+        "dist/utils"
       ]
     },
     "declaration": false,
